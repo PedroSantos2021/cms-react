@@ -1,0 +1,34 @@
+@import '../base/Variables.scss';
+@import '../base/Colors.scss';
+.login {
+    height: $height-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 23em;
+    background-color: white;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .75em;
+    }
+    &__header h5{
+        color: $teal-600;
+        font-size: 1.25em;
+        font-weight: 600;
+    }
+    &__content {
+        padding: 1em 2em;
+    }
+    &__footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+

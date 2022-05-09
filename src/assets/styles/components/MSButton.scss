@@ -1,0 +1,26 @@
+@import '../base/Colors.scss';
+@mixin btnBase {
+    min-width: 100px;
+    color: black;
+    height: 2.5em;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: .25em;
+    &:hover {
+        cursor: pointer;
+        filter: opacity(.9);
+    }
+}
+
+.btn {
+    &__save {
+        @include btnBase();
+        color: white;
+        background-color: $green-800;
+    }
+    &__cancel {
+        @include btnBase();
+        background-color: $grey-400;
+        color: $blue-grey-700;
+    }
+}

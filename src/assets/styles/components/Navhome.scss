@@ -1,0 +1,10 @@
+@import '../base/Colors.scss';
+@import '../mixins/gridLayout.scss';
+.nav {
+    &__content {
+        width: 100%;
+        background-color: $grey-200;
+        display: flex;
+        padding: .25em;
+    }
+}

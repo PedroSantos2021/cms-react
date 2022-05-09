@@ -1,0 +1,43 @@
+@import '../base/Variables.scss';
+@import '../base/Colors.scss';
+.header {
+    display: flex;
+    background-color: $blue-grey-900;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem 0 .5rem;
+    width: 100%;
+    color:$teal-600;
+    height: $height-header;
+    z-index: 10;
+    &__brand h3 {
+        text-transform: capitalize;
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+    &__user {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: .5rem;
+        border-radius: .5rem;
+        display: flex;
+        &-exit {
+            color: $red-300;
+        }
+        &-exit:hover{
+            color: $red-400;
+            cursor: pointer;
+        }
+        &-exit, a {
+            padding-left: .5em;
+            padding-right: .5em;
+        }
+        a:hover{
+            color: $teal-400;
+            cursor: pointer;
+        }
+    }
+    &__user, &__user-exit {
+        font-weight: 600;
+    }
+}

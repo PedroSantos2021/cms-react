@@ -1,0 +1,35 @@
+@import '../base/Colors.scss';
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        color: $blue-grey-700;
+        padding: 1em;
+        position: relative;
+        min-width: 320px;
+        max-width: 480px;
+        min-height: 200px;
+        max-height: 600px;
+        overflow-y: auto;
+        background-color: white;
+    }
+    &.isOpen{
+        display: flex;
+    }
+    &__close {
+        color: red;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+    }
+}
+
